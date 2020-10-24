@@ -1,0 +1,40 @@
+{
+    "how": 5,
+    "config": [
+        {
+            "title": "<h1>欢迎使用！</h1>",
+            "background": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603542015360&di=933ab28bee3d99de6dffa78f578a8f38&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201503%2F19%2F211608ztcq7higicydxhsy.jpg",
+            "SmallTitle": "你的文档正在被加载中......",
+            "TitleColor": "white",
+            "SmallTitleColor": "white"
+        },
+        {
+            "title": "<h1>开放</h1>",
+            "background": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603542015360&di=933ab28bee3d99de6dffa78f578a8f38&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201503%2F19%2F211608ztcq7higicydxhsy.jpg",
+            "SmallTitle": "一个json，管理内容",
+            "TitleColor": "white",
+            "SmallTitleColor": "white"
+        },
+        {
+            "title": "<h1>开源</h1>",
+            "background": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603542015360&di=933ab28bee3d99de6dffa78f578a8f38&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201503%2F19%2F211608ztcq7higicydxhsy.jpg",
+            "SmallTitle": "开源软件，更方便",
+            "TitleColor": "white",
+            "SmallTitleColor": "white"
+        },
+        {
+            "title": "<h1>抱歉作者不知道说什么</h1>",
+            "background": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603542015360&di=933ab28bee3d99de6dffa78f578a8f38&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201503%2F19%2F211608ztcq7higicydxhsy.jpg",
+            "SmallTitle": "不知道不知道不知道",
+            "TitleColor": "white",
+            "SmallTitleColor": "white"
+        },
+        {
+            "title": "<h1>马上开始</h1>",
+            "background": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603542015360&di=933ab28bee3d99de6dffa78f578a8f38&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201503%2F19%2F211608ztcq7higicydxhsy.jpg",
+            "SmallTitle": "文档马上加载完成，请稍后",
+            "TitleColor": "white",
+            "SmallTitleColor": "white"
+        }
+    ]
+}
