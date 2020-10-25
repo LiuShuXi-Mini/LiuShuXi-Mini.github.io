@@ -6,9 +6,11 @@ a{
     left: 0px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
+    height: 5%;
+    color: white;
 }
 #up *{
-    height: 5%;
+    height: 100%;
 }
 #up a:hover{
     background-color: rgba(0, 0, 255, 0.3);
