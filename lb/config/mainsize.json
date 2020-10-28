@@ -2,16 +2,16 @@
     "how": 2,
     "config": [
         {
-            "title": "<p class='title large'>访问我的GitHub</p>",
+            "title": "<h1>访问我的GitHub</h1>",
             "background": "https://liushuxi-mini.github.io/pictures/u=1705581946,4177791147&fm=26&gp=0.jpg",
-            "SmallTitle": "<a class='but' href='https://github.com/LiuShuXi-Mini'>在我的GitHub中查看更多内容</a><a class='but' href='https://github.com/LiuShuXi-Mini/LiuShuXi-Mini.github.io'>查看源码</a>",
+            "SmallTitle": "<a target='_BLANK' class='but' href='https://github.com/LiuShuXi-Mini'>在我的GitHub中查看更多内容</a><a class='but' href='https://github.com/LiuShuXi-Mini/LiuShuXi-Mini.github.io'>查看源码</a>",
             "TitleColor": "white",
             "SmallTitleColor": "white"
         },
         {
-            "title": "<p class='title large'>新闻</p>",
+            "title": "<h1>新闻</h1>",
             "background": "https://liushuxi-mini.github.io/pictures/timg.jfif",
-            "SmallTitle": "<a class='but'>未开放</a>",
+            "SmallTitle": "<a target='_BLANK' class='but'>未开放</a>",
             "TitleColor": "white",
             "SmallTitleColor": "white"
         },
