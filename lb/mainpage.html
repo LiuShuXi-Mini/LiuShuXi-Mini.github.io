@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="title" id="title"></div>
+    <div class="smtit" id="smtit"></div>
+    <div class="back" id="back"></div>
+    <div class="back"></div>
+    <a id="close">退出</a>
+</body>
+<script>
+    var con = {}
+    var now = 0
+    function chacon(config) {
+        con = JSON.parse(config);
+        console.log(con)
+    }
+    var back = document.getElementById("back")
+    function change() {
+        if (now >= con.how) {
+            now = 0
+        }
+        console.log(now, con.how)
+        show = con.config[now]
+        console.log(show)
+        document.getElementById("title").addEventListener("animationend", function () {
+            document.getElementById("title").innerHTML = show.title
+            document.getElementById("title").style.color = show.TitleColor
+            document.getElementById("title").addEventListener("animationend", function () { })
+            document.getElementById("title").style.animation = "fqh 1s"
+        })
+        document.getElementById("smtit").addEventListener("animationend", function () {
+            document.getElementById("smtit").innerHTML = show.SmallTitle
+            document.getElementById("smtit").style.color = show.SmallTitleColor
+            document.getElementById("smtit").addEventListener("animationend", function () { })
+            document.getElementById("smtit").style.animation = "fqh 1s"
+        })
+        back.addEventListener("animationend", function () {
+            back.style.backgroundImage = 'url("' + show.background + '"'
+            back.style.animation = "fqh 1s"
+        })
+        document.getElementById("title").style.animation = "qh 1s"
+        document.getElementById("smtit").style.animation = "qh 1s"
+        back.style.animation = "qh 1s"
+        now++
+    }
+    document.getElementById("close").onclick = function () {
+        exitScreen()
+        exit()//后面Windows端出来这个命令作用是关闭窗口
+    }
+    $.getJSON("https://LiuShuXi-Mini.github.io/pbjson/def.json", function (data) {
+        con = data
+    })
+    //chacon('{"how":5,"config":[{"title":"<h1>欢迎使用！</h1>","background":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603542015360&di=933ab28bee3d99de6dffa78f578a8f38&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201503%2F19%2F211608ztcq7higicydxhsy.jpg","SmallTitle":"你的文档正在被加载中......","TitleColor":"white","SmallTitleColor":"white"},{"title":"<h1>开放</h1>","background":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603542015360&di=933ab28bee3d99de6dffa78f578a8f38&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201503%2F19%2F211608ztcq7higicydxhsy.jpg","SmallTitle":"一个json，管理内容","TitleColor":"white","SmallTitleColor":"white"},{"title":"<h1>开源</h1>","background":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603542015360&di=933ab28bee3d99de6dffa78f578a8f38&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201503%2F19%2F211608ztcq7higicydxhsy.jpg","SmallTitle":"开源软件，更方便","TitleColor":"white","SmallTitleColor":"white"},{"title":"<h1>抱歉作者不知道说什么</h1>","background":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603542015360&di=933ab28bee3d99de6dffa78f578a8f38&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201503%2F19%2F211608ztcq7higicydxhsy.jpg","SmallTitle":"不知道不知道不知道","TitleColor":"white","SmallTitleColor":"white"},{"title":"<h1>马上开始</h1>","background":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603542015360&di=933ab28bee3d99de6dffa78f578a8f38&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201503%2F19%2F211608ztcq7higicydxhsy.jpg","SmallTitle":"文档马上加载完成，请稍后","TitleColor":"white","SmallTitleColor":"white"}]}')
+    setInterval("change()", 10000)
+    function fullScreen() {
+        var el = document.documentElement;
+        var rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen || el.msRequestFullScreen;
+
+        //typeof rfs != "undefined" && rfs
+        if (rfs) {
+            rfs.call(el);
+        }
+        else if (typeof window.ActiveXObject !== "undefined") {
+            //for IE，这里其实就是模拟了按下键盘的F11，使浏览器全屏
+            var wscript = new ActiveXObject("WScript.Shell");
+            if (wscript != null) {
+                wscript.SendKeys("{F11}");
+            }
+        }
+    }
+    function exitScreen() {
+        var el = document;
+        var cfs = el.cancelFullScreen || el.webkitCancelFullScreen || el.mozCancelFullScreen || el.exitFullScreen;
+
+        //typeof cfs != "undefined" && cfs
+        if (cfs) {
+            cfs.call(el);
+        }
+        else if (typeof window.ActiveXObject !== "undefined") {
+            //for IE，这里和fullScreen相同，模拟按下F11键退出全屏
+            var wscript = new ActiveXObject("WScript.Shell");
+            if (wscript != null) {
+                wscript.SendKeys("{F11}");
+            }
+        }
+    }
+    function exit(){
+        return
+    }
+    fullScreen()
+</script>
+
+</html>

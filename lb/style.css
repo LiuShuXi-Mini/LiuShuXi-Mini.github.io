@@ -1,0 +1,81 @@
+a{
+    text-decoration: none;
+}
+#close{
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 5px;
+    color: black;
+    position: fixed;
+    right: 5%;
+    animation: fclof 0.5s;
+    top: 5%;
+}
+#close:hover{
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    animation: clof 0.5s;
+}
+@keyframes clof{
+    from{
+        background: rgba(255, 255, 255, 0.6);
+        color: black;
+    }
+    to{
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+    }
+}
+@keyframes fclof{
+    from{
+
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+    }
+    to{
+        background: rgba(255, 255, 255, 0.6);
+        color: black;
+    }
+}
+.back{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    z-index: -1;
+}
+body{
+    background: black;
+}
+.title{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation: fqh 1s;
+}
+.smtit{
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation: fqh 1s;
+}
+@keyframes qh{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes fqh{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

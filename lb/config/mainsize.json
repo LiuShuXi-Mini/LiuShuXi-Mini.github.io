@@ -1,0 +1,40 @@
+{
+    "how": 2,
+    "config": [
+        {
+            "title": "<p class='title large'>访问我的GitHub</p>",
+            "background": "https://liushuxi-mini.github.io/pictures/u=1705581946,4177791147&fm=26&gp=0.jpg",
+            "SmallTitle": "<a class='but' href='https://github.com/LiuShuXi-Mini'>在我的GitHub中查看更多内容</a><a class='but' href='https://github.com/LiuShuXi-Mini/LiuShuXi-Mini.github.io'>查看源码</a>",
+            "TitleColor": "white",
+            "SmallTitleColor": "white"
+        },
+        {
+            "title": "<p class='title large'>新闻</p>",
+            "background": "https://liushuxi-mini.github.io/pictures/timg.jfif",
+            "SmallTitle": "<a class='but'>未开放</a>",
+            "TitleColor": "white",
+            "SmallTitleColor": "white"
+        },
+        {
+            "title": "<p class='title large'></p>",
+            "background": "https://LiuShuXi-Mini.github.io/pictures/timg (1).jfif",
+            "SmallTitle": "开源软件，更方便",
+            "TitleColor": "white",
+            "SmallTitleColor": "white"
+        },
+        {
+            "title": "<p class='title large'></p>",
+            "background": "https://liushuxi-mini.github.io/pictures/timg.jfif",
+            "SmallTitle": "不知道不知道不知道",
+            "TitleColor": "white",
+            "SmallTitleColor": "white"
+        },
+        {
+            "title": "<p class='title large'></p>",
+            "background": "https://liushuxi-mini.github.io/pictures/u=1705581946,4177791147&fm=26&gp=0.jpg",
+            "SmallTitle": "文档马上加载完成，请稍后",
+            "TitleColor": "white",
+            "SmallTitleColor": "white"
+        }
+    ]
+}
