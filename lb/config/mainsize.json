@@ -16,23 +16,23 @@
             "SmallTitleColor": "white"
         },
         {
-            "title": "<p class='title large'></p>",
+            "title": "",
             "background": "https://LiuShuXi-Mini.github.io/pictures/timg (1).jfif",
-            "SmallTitle": "开源软件，更方便",
+            "SmallTitle": "",
             "TitleColor": "white",
             "SmallTitleColor": "white"
         },
         {
-            "title": "<p class='title large'></p>",
+            "title": "",
             "background": "https://liushuxi-mini.github.io/pictures/timg.jfif",
-            "SmallTitle": "不知道不知道不知道",
+            "SmallTitle": "",
             "TitleColor": "white",
             "SmallTitleColor": "white"
         },
         {
-            "title": "<p class='title large'></p>",
+            "title": "",
             "background": "https://liushuxi-mini.github.io/pictures/u=1705581946,4177791147&fm=26&gp=0.jpg",
-            "SmallTitle": "文档马上加载完成，请稍后",
+            "SmallTitle": "",
             "TitleColor": "white",
             "SmallTitleColor": "white"
         }
