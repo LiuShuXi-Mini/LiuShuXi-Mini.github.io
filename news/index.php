@@ -14,6 +14,22 @@
     <div class="part">
         <iframe class="full" src="/lb/newslb1.html" frameborder="0"></iframe>
     </div>
+    <div class="part" id="hot">
+        <p class="title middle">热点新闻</p>
+        <?php
+        $dir = "hot-news";  //要获取的目录
+        //先判断指定的路径是不是一个文件夹
+        if (is_dir($dir)){
+            if ($dh = opendir($dir)){
+                while (($file = readdir($dh))!= false){
+                    $filePath = $file;
+                    echo $filePath;
+                }
+                closedir($dh);
+            }
+        }
+        ?>
+    </div>
     <div class="line-flex">
         <div class="part two">
             <p class="title middle">中考前沿</p>
@@ -21,9 +37,6 @@
         <div class="part two">
             <p class="title middle">震惊新闻</p>
         </div>
-    </div>
-    <div class="part" id="hot">
-        <p class="title middle">热点新闻</p>
     </div>
 </body>
 </html>
