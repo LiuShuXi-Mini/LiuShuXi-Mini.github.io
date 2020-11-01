@@ -1,5 +1,13 @@
 {
     "configurations": [
+        {
+            "name": "gitsite.d",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}",
+            "file": "${workspaceFolder}/debug-on-gitsite.d.html"
+        },
     {
         "name": "Launch Chrome",
         "request": "launch",

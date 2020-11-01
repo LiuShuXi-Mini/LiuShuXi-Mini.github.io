@@ -31,12 +31,63 @@ body{
     height: 5%;
     color: white;
     padding: 10px 5px 10px 5px;
+    z-index: 90;
+    transform: translateY(-90%);
+    -webkit-transform: translateY(-90%);
+    animation: ftophide 0.5s;
+    -webkit-animation: ftophide 0.5s;
+}
+#up:hover{
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    animation: tophide 0.5s;
+    -webkit-animation: tophide 0.5s;
+}
+@keyframes tophide{
+    from{
+        transform: translateY(-90%);
+        -webkit-transform: translateY(-90%);
+    }
+    to{
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+}
+@-webkit-keyframes tophide{
+    from{
+        transform: translateY(-90%);
+        -webkit-transform: translateY(-90%);
+    }
+    to{
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+}
+@keyframes ftophide{
+    from{
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+    to{
+        transform: translateY(-90%);
+        -webkit-transform: translateY(-90%);
+    }
+}
+@-webkit-keyframes ftophide{
+    from{
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+    to{
+        transform: translateY(-90%);
+        -webkit-transform: translateY(-90%);
+    }
 }
 #up *{
     display: inline-block;
     color: white;
     padding: 10px 5px 10px 5px;
-    z-index: 90;
+    
 }
 #up .a:hover{
     background-color: rgba(0, 0, 255, 0.3);
@@ -157,7 +208,7 @@ body{
 }
 .line-flex{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .part.two{
