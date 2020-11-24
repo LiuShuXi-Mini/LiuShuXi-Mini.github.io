@@ -111,8 +111,6 @@ body{
     padding: 5px;
     border-radius: 5px;
     display: inline-block;
-    animation: upqd 1s;
-    -webkit-animation: upqd 1s;
     background-color: rgba(255, 255, 255, 0.3);
 }
 .full{
@@ -190,6 +188,7 @@ body{
     box-shadow: white 0px 0px 30px;
     animation: tow 0.5s;
     -webkit-animation: tow 0.5s;
+    background-color: white;
 }
 @keyframes tow{
     from{
