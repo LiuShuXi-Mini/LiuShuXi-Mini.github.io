@@ -28,11 +28,7 @@
         html{
             background: white;
         }
-        #up{
-            background-image: linear-gradient(to right,skyblue 80%,greenyellow);
-        }
         .full{
-            width:100vw;
             height:100vh;
         }
         </style>
@@ -45,11 +41,34 @@
         <a class="a" onclick="scrollToId('about',1000)">关于</a>
         <a class="a" onclick="scrollToId('xc',1000)">宣传</a>
     </div>
-    <div id="first" style="background-image: linear-gradient(to right,skyblue 80%,greenyellow);background-size: cover;"
+    <div id="first" style="background-image: url('minibianc.png');background-size: cover;"
         class="full part center">
         <h1 style="margin-top: 5%;color: black;">迷你编程- 创造新活力</h1>
-        <iframe src="http://xuecode3.mini1.cn" frameborder="0"></iframe>
-        <a style="color: black;" href="http://xuecode3.mini1.cn" class="but">体验一下</a>
+        <a style="color: black;" href="http://xuecode3.mini1.cn" class="but">体验一下</a><br><br>
+        <a href="https://www.miniaixue.com/" style="margin: 3%;" class="but">
+            <svg width="10em" height="10em" viewBox="0 0 16 16" class="bi bi-arrow-down-left-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm8.121 5.172a.5.5 0 1 1 .707.707L6.732 9.975H9.5a.5.5 0 1 1 0 1H5.525a.5.5 0 0 1-.5-.5V6.5a.5.5 0 1 1 1 0v2.768l4.096-4.096z"/>
+              </svg><br>
+            从官方下载
+        </a>
+        <a href="https://minipan.miniaixue.com/package/37f/c38/MiniCodeMicro_1.exe" style="margin: 3%;" class="but">
+            <svg width="10em" height="10em" viewBox="0 0 16 16" class="bi bi-grid-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+              </svg><br>
+            Window版
+        </a>
+        <a href="https://minipan.miniaixue.com/package/e34/fe6/app-release-production-1.6.100-official.apk" style="margin: 3%;" class="but">
+            <svg width="10em" height="10em" viewBox="0 0 16 16" class="bi bi-box" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+              </svg><br>
+            Android版
+        </a>
+        <a style="margin: 3%;" class="but">
+            <svg width="10em" height="10em" viewBox="0 0 16 16" class="bi bi-phone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+              </svg><br>
+            ios版(敬请期待)
+        </a>
     </div>
     <div class="part full center"  id="about">
         <h1 style="margin-top: 5%;">关于我</h1>
@@ -69,6 +88,11 @@
                     <h2 class="title">教学课件</h2>
                     <p>发布教学课件，弘扬编程思想</p>
                     <p>发布课件<span style="color: coral;" class="title middle">3</span>个</p>
+                </div><br>
+                <div class="childpart center">
+                    <h2>联系方式</h2>
+                    <a class="item"><span class="title">迷你号</span><br>680662166</a>
+                    <a class="item"><span class="title">QQ</span><br>2651732845</a>
                 </div>
             </div>
     </div>
@@ -86,7 +110,7 @@
             <div class="childpart">
                 <h2 class="title middle">2020</h2>
                 <p>增加玩法积木，增添函数</p>
-            </div>
+            </div><br>
             <div class="childpart">
                 <h2 class="title middle">2020</h2>
                 <p>加入扩展，更多选择</p>

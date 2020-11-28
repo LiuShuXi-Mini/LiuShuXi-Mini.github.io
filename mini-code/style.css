@@ -9,12 +9,14 @@ html{
 }
 body{
     text-align: center;
-    left: 50%;
     background: rgba(255, 255, 255, 0.3);
-    padding-right: 20px;
-    border-radius: 20px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
     margin: 0px;
-    background-image: linear-gradient(to right,blue,purple);
+    background-image: linear-gradient(to right,yellow,purple);
+    overflow-x: hidden;
 }
 .pagec{
     position: fixed;
@@ -34,11 +36,11 @@ body{
     left: 0px;
     top: 0px;
     width: 100%;
-    background-image: linear-gradient(to right,blue,purple);
+    background-image: linear-gradient(to right,yellow,purple);
     background-size: cover;
     box-shadow: 0px 0px 15px black;
     height: 5%;
-    color: black;
+    color: white;
     padding: 10px 5px 10px 5px;
     z-index: 90;
 }
@@ -84,7 +86,7 @@ body{
 }
 #up *{
     display: inline-block;
-    color: black;
+    color: white;
     padding: 10px 5px 10px 5px;
     
 }
