@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,24 +24,35 @@
             e.preventDefault();
         }, { passive: false });  //passive 参数不能省略，用来兼容ios和android
     </script>
+    <style>
+        html{
+            background: white;
+        }
+        #up{
+            background-image: linear-gradient(to right,skyblue 80%,greenyellow);
+        }
+        .full{
+            width:100vw;
+            height:100vh;
+        }
+        </style>
 </head>
 
-<body style="overflow: hidden;">
+<body>
     <div id="up">
-        <a onclick="scrollToId('about',1000)" class="a"><span class="title small">房主傻的原因</span><span
-                style="color: rgb(216, 216, 216);">迷你号:680662166</span></a>
+        <a onclick="scrollToId('about',1000)" class="a"><span class="title small">房主傻的原因</span></a>
         <a class="a" onclick="scrollToId('first',1000)">顶部</a>
         <a class="a" onclick="scrollToId('about',1000)">关于</a>
         <a class="a" onclick="scrollToId('xc',1000)">宣传</a>
     </div>
-    <div id="first" style="background-image: url('/pictures/minibianc.png');background-size: cover;"
+    <div id="first" style="background-image: linear-gradient(to right,skyblue 80%,greenyellow);background-size: cover;"
         class="full part center">
         <h1 style="margin-top: 5%;color: black;">迷你编程- 创造新活力</h1>
+        <img src="/pictures/minibianc.png" width="80%" height="60%" alt="0"><br>
         <a style="color: black;" href="http://xuecode3.mini1.cn" class="but">体验一下</a>
-        <a style="color: black;" class="but underdiv" onclick="scrto('about')">↓</a>
     </div>
-    <div class="part full center" style="top: 100%;background-image: url('/pictures/u=2747364614,2411895227&fm=26&gp=0.jpg');background-size: cover;" id="about">
-        <h1 style="margin-top: 5%;color: white;">关于我</h1>
+    <div class="part full center"  id="about">
+        <h1 style="margin-top: 5%;">关于我</h1>
             <div class="line-flex">
                 <div class="childpart">
                     <h2 class="title">陪伴迷你编程</h3>
@@ -61,13 +71,9 @@
                     <p>发布课件<span style="color: coral;" class="title middle">3</span>个</p>
                 </div>
             </div>
-            <div class="underdiv">
-                <a class="but" onclick="scrto('first')">↑</a>
-                <a class="but" onclick="scrto('xc')">↓</a>
-            </div>
     </div>
-    <div class="part full center" style="top: 200%;background-image: url('/pictures/timg (2).jfif');background-size: cover;" id="xc">
-        <h1 style="margin-top: 5%;color: white;">进程</h1>
+    <div class="part full center" style="top: 200%;background-image: linear-gradient(to right,skyblue 80%,greenyellow);background-size: cover;" id="xc">
+        <h1 style="margin-top: 5%;">进程</h1>
         <div class="line-flex">
             <div class="childpart">
                 <h2 class="title middle">2019</h2>
@@ -86,7 +92,6 @@
                 <p>加入扩展，更多选择</p>
             </div>
         </div>
-        <a class="but underdiv" onclick="scrto('about')">↑</a>
     </div>
 </body>
 
