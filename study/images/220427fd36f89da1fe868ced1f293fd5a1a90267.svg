@@ -1,0 +1,26 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="13.963ex" height="3.009ex" style="vertical-align: -0.171ex; margin-right: -0.028ex;" viewBox="0 -1221.9 6012 1295.7" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-1-Title">
+<title id="MathJax-SVG-1-Title">{\displaystyle \overbrace {\qquad \qquad \qquad } }</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E1-MJSZ4-E150" d="M-18 -213L-24 -207V-172L-16 -158Q75 2 260 84Q334 113 415 119Q418 119 427 119T440 120Q454 120 457 117T460 98V60V25Q460 7 457 4T441 0Q308 0 193 -55T25 -205Q21 -211 18 -212T-1 -213H-18Z"></path>
+<path stroke-width="1" id="E1-MJSZ4-E151" d="M-10 60Q-10 104 -10 111T-5 118Q-1 120 10 120Q96 120 190 84Q375 2 466 -158L474 -172V-207L468 -213H451H447Q437 -213 434 -213T428 -209T423 -202T414 -187T396 -163Q331 -82 224 -41T9 0Q-4 0 -7 3T-10 25V60Z"></path>
+<path stroke-width="1" id="E1-MJSZ4-E153" d="M-10 60V95Q-10 113 -7 116T9 120Q151 120 250 171T396 284Q404 293 412 305T424 324T431 331Q433 333 451 333H468L474 327V292L466 278Q375 118 190 36Q95 0 8 0Q-5 0 -7 3T-10 24V60Z"></path>
+<path stroke-width="1" id="E1-MJSZ4-E152" d="M-24 327L-18 333H-1Q11 333 15 333T22 329T27 322T35 308T54 284Q115 203 225 162T441 120Q454 120 457 117T460 95V60V28Q460 8 457 4T442 0Q355 0 260 36Q75 118 -16 278L-24 292V327Z"></path>
+<path stroke-width="1" id="E1-MJSZ4-E154" d="M-10 0V120H410V0H-10Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+<g transform="translate(12,752)">
+ <use xlink:href="#E1-MJSZ4-E150" x="23" y="0"></use>
+<g transform="translate(530.7196428571428,0) scale(4.917857142857143,1)">
+ <use xlink:href="#E1-MJSZ4-E154"></use>
+</g>
+<g transform="translate(2549,0)">
+ <use xlink:href="#E1-MJSZ4-E153"></use>
+ <use xlink:href="#E1-MJSZ4-E152" x="450" y="0"></use>
+</g>
+<g transform="translate(3497.219642857143,0) scale(4.917857142857143,1)">
+ <use xlink:href="#E1-MJSZ4-E154"></use>
+</g>
+ <use xlink:href="#E1-MJSZ4-E151" x="5525" y="0"></use>
+</g>
+</g>
+</svg>
