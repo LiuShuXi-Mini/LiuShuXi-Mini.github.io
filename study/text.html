@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <style>
-    body{
+    body {
         padding: 0%;
         margin: 0%;
     }
@@ -12,17 +12,17 @@
     <title>中考倒计时</title>
     <link rel="stylesheet" href="/css/index.css">
 </head>
-    <div id="up">
-        <a class="a" href="#">中考倒计时</a>
+<div id="up">
+    <a class="a" href="#">中考倒计时</a>
+</div>
+<div class="part center pagec">
+    <h1>中考倒计时</h1>
+    <div class="part center">
+        <span id="day" class="item title large">000</span><span class="item title middle">天</span>
     </div>
-    <div class="part center pagec">
-        <h1>中考倒计时</h1>
-        <div class="part center">
-            <span id="day" class="item title large">000</span><span class="item title middle">天</span>
-        </div>
-    </div>
+</div>
 <script>
-    var time={
+    var time = {
         day: 17,
         month: 6,
         year: 2021
@@ -38,15 +38,16 @@
         iDays = Math.floor(dateSpan / (24 * 3600 * 1000));
         return iDays
     }
-    function clock(){
+    function clock() {
         var date = new Date
         var year = date.getFullYear(); //获取年
-        var month = date.getMonth()+1;//获取月
+        var month = date.getMonth() + 1;//获取月
         var day = date.getDate(); //获取当日
         var a = 0;
-        a = datedifference(year + "-" + month + "-" + day,time.year + "-" + time.month + "-" + time.day);
+        a = datedifference(year + "-" + month + "-" + day, time.year + "-" + time.month + "-" + time.day);
         document.getElementById("day").innerHTML = a
     }
-    setInterval("clock();",1000)
+    setInterval("clock();", 1000)
 </script>
+<script src='/css/aos.js'></script>
 </html>
