@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,28 +10,31 @@
     <a class="a" href="index.html">欢迎</a>
 </div>
 <body>
-    <div class="part" style="height: 500px;">
+    <div class="part" style="height: 500px;" aos="slide-right">
         <iframe class="full" src="lb/mainpage.html" frameborder="0"></iframe>
     </div>
-    <div class="part center line-flex" id="introduce">
-        <a class="title large">介绍</a>
-        <br>
-        <div class="part two childpart center">
-            <h1 class="title">2020/10/20</h1><br>
+    <a class="title large" aos="slide-left">介绍</a>
+    <div class="part center line-flex" id="introduce" aos="slide-right">
+        <div class="part two childpart center" aos="slide-left">
+            <h1 class="title" aos="slide-left">2020/10/20</h1><br>
             <p>一个需要永久存放json的强迫症患者制作了这个网站</p>
         </div>
-        <div class="part two childpart center">
-            <h1 class="title">2020/10/xx</h1><br>
+        <div class="part two childpart center" aos="slide-left">
+            <h1 class="title" aos="slide-left">2020/10/xx</h1><br>
             <p>通过测试发布第一个版本</p>
         </div>
     </div>
-    <p class="title large">新闻</p>
-    <div class="line-flex">
-        <div class="part childpart two center">暂未更新</div>
-        <div class="part childpart two center">暂未更新</div>
+    <p class="title large" aos="slide-left">新闻</p>
+    <div class="line-flex" aos="slide-right">
+        <div class="part childpart two center" aos="slide-left">暂未更新</div>
+        <div class="part childpart two center" aos="slide-left">暂未更新</div>
     </div>
 </body>
 <footer>
     <script src="css/main.js"></script>
+    <script src="head.js"></script>
+    <script src='/css/aos.js'></script>
+    <script src="/css/iquery.js"></script>
+    <!--<link rel="stylesheet" href="/css/aos.css">-->
 </footer>
 </html>
